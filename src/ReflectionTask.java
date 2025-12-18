@@ -30,8 +30,6 @@ public class ReflectionTask {
         System.out.println("\n[Після змін]");
         System.out.println("Literal ('Java'): " + literalString);
         System.out.println("Input:            " + inputString);
-
-        System.out.println("Тест на літерал: " + ("Java".equals(literalString) ? "Без змін" : "Написано \"Java\", а виводить " + "Java"));
     }
 
     private static void modifyStringInternal(String target, String newValue) throws NoSuchFieldException, IllegalAccessException {
